@@ -19,13 +19,28 @@ body{
 p{
     margin: none;
     padding: none;
-    column-width: 300px;
-    column-count: 3;
+    column-width: 400px;
+    column-count: 2;
     column-gap: 30px;
     text-align: justify;
     column-rule: 2px dotted #1e90ff;
     color: #454545;
     line-height: 1.7;
+    word-break: break-all;
+}
+p img{
+    width: 200px;
+}
+#HEROPY1{
+    float: left;
+}
+#HEROPY2{
+    float: right;
+}
+#HEROPY3{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
 }
 .box{
     width: 150px;
@@ -111,8 +126,10 @@ p{
     width: 100px;
     height: 100px;
     background: #1c509f;
+}
+.box5:hover{
     animation: move 2s;
-    animation-timing-function: linear;
+    animation-timing-function: infinite;
     animation-iteration-count: 2;
     animation-direction: alternate;
 }
@@ -149,6 +166,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
 }
 #flex-item .item1{
     order: 3;
@@ -161,6 +180,30 @@ p{
 }
 #flex-item .item6{
     order: -1;
+}
+#align-item{
+    margin: 20px 0;
+    border: 4px dashed #666;
+    display: flex;
+    width: 1012px;
+    height: 300px;
+    align-items: baseline;
+}
+#align-item .item{
+    width: 100px;
+    height: 100px;
+    background: #66deff;
+    border: 5px dashed #ffa500;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+#align-item .item:nth-child(3){
+    font-size: 100px;
 }
 #align-self{
     width: 1012px;
@@ -197,4 +240,86 @@ p{
 #align-self .item8{
     align-self: stretch;
     height: auto;
+}
+#flex{
+    border: 4px solid #777;
+    display: flex;
+}
+#flex .item{
+    height: 100px;
+    background: #ffa500;
+    border: 5px dashed #ff3030;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    flex: 1 1 auto;
+}
+#flex-grow{
+    border: 4px solid #777;
+    display: flex;
+}
+#flex-grow .item{
+    height: 100px;
+    background: #ffa500;
+    border: 5px dashed #ff3030;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+#flex-grow .item1{
+    flex-grow: 1;
+}
+#flex-grow .item2{
+    flex-grow: 2;
+}
+#flex-grow .item3{
+    flex-grow: 3;
+}
+#flex-basis{
+    border: 4px solid #777;
+    display: flex;
+}
+#flex-basis .item{
+    height: 100px;
+    background: #ffa500;
+    border: 5px dashed #ff3030;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+#flex-basis .item3{
+    flex-grow: 2;
+}
+#myButton{
+    display: none;
+    width: 100px;
+    height: 50px;
+    background: rgb(60, 120, 255);
+    border: 3px solid #aaa;
+    border-right: 3px solid #777;
+    border-bottom: 3px solid #777;
+    color: #fff;
+    font-size: 16px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+#myButton:hover{
+    background: rgb(7, 126, 7);
 }

@@ -4,4 +4,6 @@
     * animation, @keyframe, transform, translate
     * :hover, :before
     * order
-    * align-self, flex-wrap
+    * align-items, align-self, flex-wrap
+    * flex, flex-grow, flex-basis
+    * script tag for gotoTop button

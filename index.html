@@ -12,6 +12,7 @@
             Lorem Ipsum
         </h3>
         <p>
+            <img src="assets/img/heropy.png" alt="HEROPY" title="HEROPY" id="HEROPY1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Orci eu lobortis elementum nibh tellus molestie nunc. Pretium fusce id velit ut tortor. Nascetur
             ridiculus mus mauris vitae ultricies leo integer malesuada. Scelerisque varius morbi enim nunc faucibus a
@@ -20,7 +21,9 @@
             porta nibh venenatis cras sed. Semper auctor neque vitae tempus quam. Gravida dictum fusce ut placerat orci.
             Amet est placerat in egestas erat imperdiet sed. Amet dictum sit amet justo donec enim diam vulputate ut. Velit
             aliquet sagittis id consectetur purus ut faucibus pulvinar.
-    
+            <br>
+            <br>
+            <img src="assets/img/heropy.png" alt="HEROPY" title="HEROPY2" id="HEROPY2">
             Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. Lectus magna fringilla urna porttitor rhoncus
             dolor purus non enim. Gravida in fermentum et sollicitudin ac. Condimentum mattis pellentesque id nibh tortor id
             aliquet lectus. Mi quis hendrerit dolor magna eget est lorem ipsum. Scelerisque viverra mauris in aliquam sem
@@ -31,7 +34,9 @@
             vitae suscipit. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Vestibulum lectus mauris
             ultrices eros in cursus turpis massa. A iaculis at erat pellentesque. Mauris commodo quis imperdiet massa
             tincidunt nunc pulvinar. Placerat in egestas erat imperdiet sed euismod.
-    
+            <br>
+            <br>
+            <img src="assets/img/heropy.png" alt="HEROPY" title="HEROPY3" id="HEROPY3">
             At lectus urna duis convallis convallis tellus id interdum. Egestas dui id ornare arcu odio ut sem nulla
             pharetra. Accumsan in nisl nisi scelerisque. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet
             consectetur. Pulvinar pellentesque habitant morbi tristique senectus et netus. Aliquam malesuada bibendum arcu
@@ -46,9 +51,17 @@
     <div class="box box3">1s delay</div>
     <div class="box box4">Hover me!</div>
     <div id="box-wrapper">
-        <div class="box box5"></div>
+        <div class="box box5">Hover me!</div>
     </div>
     <div id="flex-item" class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    <div id="align-item" class="container">
         <div class="item item1">1</div>
         <div class="item item2">2</div>
         <div class="item item3">3</div>
@@ -66,5 +79,47 @@
         <div class="item item7">7</div>
         <div class="item item8">8</div>
     </div>
+    <div id="flex" class="container">
+        <div class="item item1">11111</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3333333333333</div>
+    </div>
+    <div id="flex-grow" class="container">
+        <div class="item item1">flex-grow: 1</div>
+        <div class="item item2">flex-grow: 2</div>
+        <div class="item item3">flex-grow: 3</div>
+    </div>
+    <div id="flex-basis" class="container">
+        <div class="item item1">flex-grow: 1</div>
+        <div class="item item2">flex-grow: 1</div>
+        <div class="item item3">flex-grow: 2</div>
+    </div>
+    
+    <div class="boxes">
+        <button onclick="gotoTopFunction()" id="myButton">Go to TOP</button>
+    </div>
+    <script>
+        var myButton = document.getElementById("myButton");
+
+        window.onscroll = function(){
+            scrollFunction();
+        };
+        
+        function scrollFunction(){
+            if(document.body.scrollTop > 20 ||
+               document.documentElement.scrollTop > 20){
+                myButton.style.display = "block";
+            }
+            else{
+                myButton.style.display = "none";
+            }
+        }
+
+        function gotoTopFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 </html>
