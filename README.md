@@ -7,3 +7,4 @@
     * align-items, align-self, flex-wrap
     * flex, flex-grow, flex-basis
     * script tag for gotoTop button
+    * transition, transform, perspective
